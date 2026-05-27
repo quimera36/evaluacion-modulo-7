@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Países</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <section class="hero">
+      <h1>Gestión de Países</h1>
+      <p>Aplicación para listar, agregar y eliminar países con datos de población y PIB.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Listado de países</h2>
+
+        <select id="limit">
+          <option value="5">5 registros</option>
+          <option value="10">10 registros</option>
+          <option value="20">20 registros</option>
+        </select>
+      </div>
+
+      <div id="mensaje"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>País</th>
+            <th>Continente</th>
+            <th>Población</th>
+            <th>PIB 2019</th>
+            <th>PIB 2020</th>
+          </tr>
+        </thead>
+        <tbody id="tablaPaises"></tbody>
+      </table>
+
+      <button id="siguiente">Siguiente</button>
+    </section>
+
+    <section class="grid">
+      <form id="formAgregar" class="card">
+        <h2>Agregar país</h2>
+
+        <input type="text" id="nombre" placeholder="Nombre del país" required />
+        <input type="text" id="continente" placeholder="Continente" required />
+        <input type="number" id="poblacion" placeholder="Población" required />
+        <input type="number" id="pib_2019" placeholder="PIB 2019" required />
+        <input type="number" id="pib_2020" placeholder="PIB 2020" required />
+
+        <button type="submit">Agregar</button>
+      </form>
+
+      <form id="formEliminar" class="card">
+        <h2>Eliminar país</h2>
+
+        <input type="text" id="nombreEliminar" placeholder="Nombre del país" required />
+
+        <button type="submit" class="danger">Eliminar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
