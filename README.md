@@ -30,3 +30,8 @@ Magdiel Sánchez Correa
 ```bash
 npm install
 npm run dev
+```
+
+## Repositorio GitHub
+
+https://github.com/quimera36/evaluacion-modulo-7
