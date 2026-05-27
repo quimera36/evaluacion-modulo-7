@@ -1,8 +1,10 @@
 import express from "express";
+import cors from "cors";
 import { sequelize } from "./database/database.js";
 import paisesRoutes from "./routes/paises.js";
 
 const app = express();
+app.use(cors());
 
 // Middlewares
 app.use(express.json());
